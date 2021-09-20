@@ -1,0 +1,33 @@
+{
+  "name": "product-info",
+  "version": "1.0.0",
+  "description": "Product info database",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "migrate": "node bin/migrate.js",
+    "fix": "standard --fix",
+    "lint": "standard | snazzy",
+    "start": "node index.js",
+    "test": "echo No tests defined!"
+  },
+  "author": "Galvanize",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lowdb": "^1.0.11",
+    "postgrator": "^4.2.0",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.3",
+    "tap": "^15.0.9"
+  },
+  "dependencies": {
+    "fastify": "^3.19.2",
+    "fastify-autoload": "^3.9.0",
+    "fastify-env": "^2.1.1",
+    "fastify-plugin": "^3.0.0",
+    "fastify-postgres": "^3.6.0",
+    "fastify-sensible": "^3.1.1",
+    "node-fetch": "^2.6.1",
+    "pg": "^8.7.1"
+  }
+}
